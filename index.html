@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- stylesheet styles.css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="mainHeading">Store Status</h1>
+
+      <form onsubmit="return validateForm()">
+        <h2 class="date">
+          <label for="date">Select Date:</label>
+          <input type="date" id="date" name="date" required />
+        </h2>
+        <div class="content-container">
+          <span class="heading">Server</span>
+          <label class="switch">
+            <input type="checkbox" id="server" onclick="myFunction()" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="serverRemarks" class="remarks">
+          <label for="serverDetails">Remarks </label>
+          <input
+            type="text"
+            id="serverDetails"
+            name="serverDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- Backup Server -->
+        <div class="content-container">
+          <span class="heading">Backup Server</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="backupServer"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="backupServerRemarks" class="remarks">
+          <label for="backupDetails">Remarks </label>
+          <input
+            type="text"
+            id="backupDetails"
+            name="backupDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- TAB -->
+        <div class="content-container">
+          <span class="heading">TAB</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="tab"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="tabRemarks" class="remarks">
+          <label for="tabDetails">Remarks </label>
+          <input
+            type="text"
+            id="tabDetails"
+            name="tabDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- till 1 -->
+        <div class="content-container">
+          <span class="heading">till 1</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="till1"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="till1Remarks" class="remarks">
+          <label for="till1Details">Remarks </label>
+          <input
+            type="text"
+            id="till1Details"
+            name="till1Details"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- till 2 -->
+        <div class="content-container">
+          <span class="heading">till 2</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="till2"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="till2Remarks" class="remarks">
+          <label for="till2Details">Remarks </label>
+          <input
+            type="text"
+            id="till2Details"
+            name="till2Details"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- till 3 -->
+        <div class="content-container">
+          <span class="heading">till 3</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="till3"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="till3Remarks" class="remarks">
+          <label for="till3Details">Remarks </label>
+          <input
+            type="text"
+            id="till3Details"
+            name="till3Details"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- Backup Server -->
+        <div class="content-container">
+          <span class="heading">led</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="led"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="ledRemarks" class="remarks">
+          <label for="ledDetails">Remarks </label>
+          <input
+            type="text"
+            id="ledDetails"
+            name="ledDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- hand scanner -->
+        <div class="content-container">
+          <span class="heading">Hand scanner</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="handScanner"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="handScannerRemarks" class="remarks">
+          <label for="handScannerDetails">Remarks </label>
+          <input
+            type="text"
+            id="handScannerDetails"
+            name="handScannerDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- a4 printer -->
+        <div class="content-container">
+          <span class="heading">a4 printer</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="a4Printer"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="a4PrinterRemarks" class="remarks">
+          <label for="a4PrinterDetails">Remarks </label>
+          <input
+            type="text"
+            id="a4PrinterDetails"
+            name="a4PrinterDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- a4Scanner -->
+        <div class="content-container">
+          <span class="heading">a4 scanner</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="a4Scanner"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="a4ScannerRemarks" class="remarks">
+          <label for="a4ScannerDetails">Remarks </label>
+          <input
+            type="text"
+            id="a4ScannerDetails"
+            name="a4ScannerDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- UPS LIGHTS -->
+        <div class="content-container">
+          <span class="heading">ups lights</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="upsLights"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="upsLightsRemarks" class="remarks">
+          <label for="upsLightsDetails">Remarks </label>
+          <input
+            type="text"
+            id="upsLightsDetails"
+            name="upsLightsDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- UPS BATTERIES WATER LEVEL -->
+        <div class="content-container">
+          <span class="heading">UPS BATTERIES WATER LEVEL</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="upsBatteries"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="upsBatteriesRemarks" class="remarks">
+          <label for="upsBatteriesDetails">Remarks </label>
+          <input
+            type="text"
+            id="upsBatteriesDetails"
+            name="upsBatteriesDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- INTERNET -->
+        <div class="content-container">
+          <span class="heading">internet</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="internet"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="internetRemarks" class="remarks">
+          <label for="internetDetails">Remarks </label>
+          <input
+            type="text"
+            id="internetDetails"
+            name="internetDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- FOOTBALL -->
+        <div class="content-container">
+          <span class="heading">FOOTFALL</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="footFall"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="footFallRemarks" class="remarks">
+          <label for="footFallDetails">Remarks </label>
+          <input
+            type="text"
+            id="footFallDetails"
+            name="footFallDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- ANTENAS -->
+        <div class="content-container">
+          <span class="heading">antenas</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="antenas"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="antenasRemarks" class="remarks">
+          <label for="antenasDetails">Remarks </label>
+          <input
+            type="text"
+            id="antenasDetails"
+            name="antenasDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- CCTV CAMERS -->
+        <div class="content-container">
+          <span class="heading">CCTV CAMERS</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="cctv"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="cctvRemarks" class="remarks">
+          <label for="cctvDetails">Remarks </label>
+          <input
+            type="text"
+            id="cctvDetails"
+            name="cctvDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+        <!-- DVR -->
+        <div class="content-container">
+          <span class="heading">DVR</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="dvr"
+              onclick="myFunction()"
+              name="fname"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!-- remarks section -->
+        <span id="dvrRemarks" class="remarks">
+          <label for="dvrDetails">Remarks </label>
+          <input
+            type="text"
+            id="dvrDetails"
+            name="dvrDetails"
+            required
+          /><br /><br />
+        </span>
+        <hr />
+
+        <!-- button -->
+        <button id="button" onclick="checkAll()">Check All</button>
+        <input type="submit" id="button" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
