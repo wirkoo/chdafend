@@ -1,8 +1,16 @@
-var d = document.getElementById("date");
-d.value = "sdf";
-function validateForm() {
-  console.log("submitted");
+window.onload = function () {
+  getDate();
+};
+
+function getDate() {
+  var date = new Date();
+  document.getElementById("date").innerHTML = date.toLocaleDateString();
+  document.getElementById("date2").value = date.toLocaleDateString();
 }
+
+window.onload = function () {
+  getDate();
+};
 function checkAll() {
   var server = document.getElementById("server");
   server.checked = true;

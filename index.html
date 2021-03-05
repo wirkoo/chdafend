@@ -6,6 +6,7 @@
     <title>Document</title>
     <!-- stylesheet styles.css -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
   </head>
   <body>
     <div class="container">
@@ -13,11 +14,22 @@
 
       <form onsubmit="return validateForm()">
         <h2 class="date">
-          <label for="date">Select Date:</label>
-          <input type="date" id="date" name="date" required />
+          <div class="date-container">
+            <span>Today's Date </span>
+
+            <textarea
+              id="date"
+              rows="1"
+              cols="10"
+              id="date2"
+              readonly
+              disabled
+            ></textarea>
+          </div>
         </h2>
         <div class="content-container">
           <span class="heading">Server</span>
+
           <label class="switch">
             <input type="checkbox" id="server" onclick="myFunction()" />
             <span class="slider round"></span>
@@ -420,8 +432,10 @@
         <hr />
 
         <!-- button -->
-        <button id="button" onclick="checkAll()">Check All</button>
-        <input type="submit" id="button" />
+        <div class="button-container">
+          <button id="button" onclick="checkAll()">Check All</button>
+          <input type="submit" id="button" />
+        </div>
       </form>
     </div>
     <script src="script.js"></script>
