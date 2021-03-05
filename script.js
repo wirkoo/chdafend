@@ -32,6 +32,8 @@ function checkAll() {
   a4Printer.checked = true;
   var a4Scanner = document.getElementById("a4Scanner");
   a4Scanner.checked = true;
+  var attMachine = document.getElementById("attMachine");
+  attMachine.checked = true;
   var upsLights = document.getElementById("upsLights");
   upsLights.checked = true;
   var upsBatteries = document.getElementById("upsBatteries");
@@ -67,6 +69,8 @@ function checkAll() {
   a4PrinterRemarks.style.display = "none";
   var a4ScannerRemarks = document.getElementById("a4ScannerRemarks");
   a4ScannerRemarks.style.display = "none";
+  var attMachineRemarks = document.getElementById("attMachineRemarks");
+  attMachineRemarks.style.display = "none";
   var upsLightsRemarks = document.getElementById("upsLightsRemarks");
   upsLightsRemarks.style.display = "none";
   var upsBatteriesRemarks = document.getElementById("upsBatteriesRemarks");
@@ -94,6 +98,7 @@ function myFunction() {
   var handScanner = document.getElementById("handScanner");
   var a4Printer = document.getElementById("a4Printer");
   var a4Scanner = document.getElementById("a4Scanner");
+  var attMachine = document.getElementById("attMachine");
   var upsLights = document.getElementById("upsLights");
   var upsBatteries = document.getElementById("upsBatteries");
   var internet = document.getElementById("internet");
@@ -111,6 +116,7 @@ function myFunction() {
   var ledRemarks = document.getElementById("ledRemarks");
   var handScannerRemarks = document.getElementById("handScannerRemarks");
   var a4PrinterRemarks = document.getElementById("a4PrinterRemarks");
+  var attMachineRemarks = document.getElementById("attMachineRemarks");
   var a4ScannerRemarks = document.getElementById("a4ScannerRemarks");
   var upsLightsRemarks = document.getElementById("upsLightsRemarks");
   var upsBatteriesRemarks = document.getElementById("upsBatteriesRemarks");
@@ -175,6 +181,13 @@ function myFunction() {
   }
   if (handScanner.checked == false) {
     handScannerRemarks.style.display = "block";
+  }
+  //attandence machine
+  if (attMachine.checked == true) {
+    attMachineRemarks.style.display = "none";
+  }
+  if (attMachine.checked == false) {
+    attMachineRemarks.style.display = "block";
   }
   //a4Printer
   if (a4Printer.checked == true) {
